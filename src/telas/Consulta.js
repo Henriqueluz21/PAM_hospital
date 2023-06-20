@@ -20,38 +20,45 @@ if(!fonteLoaded) {
     return <>
     <View style={estilos.container}>
       <ScrollView>
-        <Text style={estilos.title}>Agende sua consulta!</Text>
-        <Text style={estilos.text}>
-              O Hospital Presidente atende diversas especialidades ambulatoriais, possui Pronto 
-              Atendimento Adulto e Infantil de urgência e emergência 24 horas.
-        </Text>
-        <Text style={estilos.subTitle}>Nome:</Text>
-        <TextInput
-          placeholder='Nome'
-          style={estilos.input}
-        />
-        <Text style={estilos.subTitle}>Celular:</Text>
-        <TextInput
-          placeholder="Celular"
-          style={estilos.input}
-        />
-        <Text style={estilos.subTitle}>CPF:</Text>
-        <TextInput
-          placeholder="CPF"
-          style={estilos.input}
-        />
-        <Text style={estilos.subTitle}>Email:</Text>
-        <TextInput 
-          placeholder="Email"
-          style={estilos.input}
-        />
-      
+          <Text style={estilos.title}>Agende sua Consulta!</Text>
+          <Text style={estilos.text}>
+                O Hospital Presidente atende diversas especialidades ambulatoriais, possui Pronto 
+                Atendimento Adulto e Infantil de urgência e emergência 24 horas.
+          </Text>
+        <View style={estilos.fundo}>
+          <Text style={estilos.subTitle}>Nome:</Text>
+          <TextInput
+            placeholder='Nome'
+            style={estilos.input}
+          />
+          <Text style={estilos.subTitle}>Celular:</Text>
+          <TextInput
+            placeholder="Celular"
+            style={estilos.input}
+          />
+          <Text style={estilos.subTitle}>CPF:</Text>
+          <TextInput
+            placeholder="CPF"
+            style={estilos.input}
+          />
+          <Text style={estilos.subTitle}>Email:</Text>
+          <TextInput 
+            placeholder="Email"
+            style={estilos.input}
+          />
+
+          <Text style={estilos.subTitle}>Especialidade:</Text>
+          <TextInput 
+            placeholder="Especialidade"
+            style={estilos.input}
+          />
+        </View>
         <View>
-          <View>
+          <View style={estilos.btn}>
             <Button title='Confirmar' 
-            onPress={() => navigation.navigate('Cadastro')}/>
+            onPress={() => navigation.navigate('Agradecimento')}/>
           </View>
-          <View>
+          <View style={estilos.btn}>
             <Button 
             title='Voltar'
             onPress={() => navigation.goBack()}/>
@@ -86,7 +93,7 @@ const estilos = StyleSheet.create({
         color: '#043863',
       },
       input:{
-        width: '99%',
+        width: '97%',
         height: 40,
         borderColor: '#1370ad',
         borderWidth: 1,
@@ -117,13 +124,16 @@ const estilos = StyleSheet.create({
         marginTop: 17
       },
       btn:{
-        width: '100%',
+        width: '95%',
         backgroundColor: '#1370ad',
         borderRadius: 8,
         marginTop: 30,
         marginLeft: 'auto',
         marginRight: 'auto'
       },
+      fundo:{
+        marginLeft: 10
+      }
 })
 
 

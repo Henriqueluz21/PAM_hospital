@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png"
 
 const Conteudo = {
     principal: {
-        titulo : "Faça Sua Consulta!",
+        titulo : "Marque seu Horário!",
         desc : " Cada um de nós possui algo muito precioso, que precisa de atenção a todo tempo: nossa vida! E tudo fica mais fácil quando você tem com quem contar.O Hospital Presidente proporciona a você uma assistência médico-hospitalar humanizada, para cuidar cada vez melhor de você. "
     },
     logo:{

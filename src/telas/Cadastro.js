@@ -25,11 +25,11 @@ if(!fonteLoaded) {
           <Image source={logo} style={estilos.logo}/>
         </View>
         <View style={estilos.meio}>
-          <Text style={estilos.meioTexto}>"Em nome de toda a equipe do Deckel, gostaríamos de expressar nossa profunda gratidão pela confiança que você depositou em nossos serviços de saúde. Agradecemos sinceramente por escolher o nosso hospital para receber cuidados médicos.
-          Nosso compromisso é fornecer atendimento de qualidade, com dedicação e respeito, visando sua saúde e bem-estar. Valorizamos imensamente a oportunidade de cuidar de você e estamos empenhados em oferecer o melhor tratamento possível."</Text>
+          <Text style={estilos.meioTexto}>Em nome de toda a equipe do Deckel, gostaríamos de expressar nossa profunda gratidão pela confiança que você depositou em nossos serviços de saúde. Agradecemos sinceramente por escolher o nosso hospital para receber cuidados médicos.
+          Nosso compromisso é fornecer atendimento de qualidade, com dedicação e respeito, visando sua saúde e bem-estar. Valorizamos imensamente a oportunidade de cuidar de você e estamos empenhados em oferecer o melhor tratamento possível.</Text>
         </View>
 
-          <View>
+          <View style={estilos.btn}>
             <Button 
             title='Voltar'
             onPress={() => navigation.navigate("Home")}/>
@@ -97,10 +97,10 @@ const estilos = StyleSheet.create({
         marginTop: 17
       },
       btn:{
-        width: '100%',
+        width: '96%',
         backgroundColor: '#1370ad',
         borderRadius: 8,
-        marginTop: 30,
+        marginTop: 20,
         marginLeft: 'auto',
         marginRight: 'auto'
       },
@@ -125,9 +125,12 @@ const estilos = StyleSheet.create({
       meio:{
         width: '90%',
         marginLeft: 17,
+        marginBottom: 35
       },
       meioTexto:{
-        textAlign: 'center'
+        textAlign: 'justify',
+        fontSize: 20,
+        color: '#043863'
       }
 })
 

@@ -28,7 +28,7 @@ export default function App() {
           {(props) => <Exame {...props} {...Conteudo} />}
         </Stack.Screen>
 
-        <Stack.Screen name='Cadastro'>
+        <Stack.Screen name='Agradecimento'>
           {(props) => <Cadastro {...props} {...Conteudo} />}
         </Stack.Screen>
         

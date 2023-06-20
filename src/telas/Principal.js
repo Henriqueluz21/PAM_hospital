@@ -14,15 +14,16 @@ export default function Principal( { topo, logo, principal, rodape, navigation }
       <ScrollView>
         <Cabecalho {...logo}/>
         <NomeLoja {...principal} />  
-
-        <Button 
+          <View style={styles.botao}>
+            <Button 
             title='Consulta'
             onPress={() => navigation.navigate('Consulta')}/>
-          
+          </View>
+          <View style={styles.botao2}>
             <Button 
             title='Exame'
             onPress={() => navigation.navigate('Exame')}/>
-          
+          </View>
         <Rodape {...rodape}/>
         <Descricao {...topo}/>
           
@@ -38,4 +39,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  botao:{
+    marginTop: 50,
+    width: '95%',
+    marginLeft: 10
+  },
+  botao2:{
+    marginTop: 10,
+    width: '95%',
+    marginLeft: 10
+  }
 });
